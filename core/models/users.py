@@ -25,3 +25,5 @@ class User(db.Model):
     @classmethod
     def get_by_email(cls, email):
         return cls.filter(cls.email == email).first()
+    
+    
